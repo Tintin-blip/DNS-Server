@@ -1,7 +1,7 @@
 
 export class DnsFormat implements HeaderFormat { 
 
-    Packet_Identifier=44834
+    Packet_Identifier=1234
     Response_Indicator=true
     Operation_Code=0
     Authoritative_Answer=false
