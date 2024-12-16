@@ -17,8 +17,7 @@ udpSocket.on("message", (data: Buffer, remoteAddr: dgram.RemoteInfo) => {
 
         header.Packet_Identifier = packetId 
         const defaultMessage = new DnsMessage(domain,header);
-
-
+// 2
         const response = defaultMessage.getMessage();
         udpSocket.send(response,0,response.length , remoteAddr.port, remoteAddr.address);
 
